@@ -1,0 +1,113 @@
+:root {
+    --fuenteTitulo:  "Young Serif", serif;
+    --fuentesecun: "Outfit", sans-serif;
+
+    --blanco: hsl(0, 0%, 100%);
+    --primarion: hsl(30, 54%, 90%);
+    --secundario: hsl(330, 100%, 98%);
+    --tercero:hsl(332, 51%, 32%);
+    --cuarto: hsl(14, 45%, 36%);
+    --quinto: hsl(30, 18%, 87%);
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--primarion); 
+}
+h1 {
+    font-family: var(--fuenteTitulo);
+    font-size:x-large;
+    font-weight: 400;
+}
+h2 {
+    color: var(--cuarto);
+}
+p {
+    font-family: var(--fuentesecun);
+    font-weight: 400;
+}
+.preparation p { 
+    color: var(--tercero);
+    font-weight: 700;
+}
+span {
+    font-weight: 700;
+}
+img {
+    width: 100%;
+    border-radius: 1rem;
+}
+ul{
+    padding-left: 1rem;
+}
+ol {
+    padding-left: 1rem;
+}
+li {
+    font-family: var(--fuentesecun);
+    font-weight: 400;
+    margin: .5rem;
+}
+ul li::marker {
+    color: var(--cuarto);
+}
+ul li {
+    padding-left: 1rem;
+}
+ol li {
+    padding-left: 1rem;
+    margin: 1rem;
+}
+ol li::marker {
+    color: var(--cuarto);
+}
+.nutrition ul li {
+    list-style-type: none;
+    padding: 5px 0; /* Agrega espacio interno para la lectura */
+    border-bottom: .1rem solid #ccc; /* Agrega una línea divisoria */
+}
+.nutrition ul li:last-child {
+    border-bottom: none; /* Elimina la línea divisoria del último elemento */
+  }
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    box-shadow: -200px -200px 5px -200px rgba(0,0,0,0);
+    background-color: var(--blanco);
+    padding: 2rem;
+    margin: 10rem 45rem 10rem 45rem;
+    border-radius: 1rem;
+}
+.preparation {
+    box-shadow: -200px -200px 5px -200px rgba(0,0,0,0);
+    background-color: var(--secundario);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.preparation h2 {
+    color: var(--tercero);
+}
+.ingredients {
+    border-bottom: .1rem solid #ccc;
+}
+.instructions {
+    border-bottom: .1rem solid #ccc;
+}
+.nutrition .li-nutrition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20rem;
+}
+.li {
+    color: var(--cuarto);
+    font-weight: 600;
+}
